@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Movies and Ratings with LocalStorage</title>
+    <!-- CSS Import -->
+	<link rel="stylesheet" href="main.css" />
+	<!-- End of CSS Import -->
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+	<!-- End of Fonts -->
+</head>
+<body>
+    <!-- App Wrapper -->
+    <main class="app">
+        <!-- Greeting -->
+        <section class="greeting">
+            <h2 class="title">
+                ADD YOUR FAVORITE MOVIES
+            </h2>
+        </section>
+        <!-- End of Greeting-->
+
+        <!-- Add Movie -->
+        <section class="create-movie">
+            
+            <div>  
+                <form id="new-movie-form">
+                    <h3>TITLE</h3>
+                    <input
+                        type="text"
+                        placeholder="e.g. Forrest Gump"
+                        name="title"
+                        id="tile" />
+                    <h3> SHORT SUMMARY</h3>
+                    <input 
+                        type="text" 
+                        placeholder="e.g. A story about a man..." 
+                        name="summary" 
+                        id="summary" />
+                    <h3>RATING</h3>
+                    <input 
+                        type="number" 
+                        placeholder="Between 1 and 5" 
+                        name="rating" 
+                        id="rating" />
+                    <input type="submit" value="Add Movie" />
+                    </div>
+                    
+                </form>           
+        </section>
+        <!-- End of Movies -->
+
+        <!-- Movie List -->
+        <section class="movie-list">
+            <h2>YOUR FAVORITE MOVIES LIST</h2>
+            <div class="list" id="movie-list"></div>
+        </section>
+        <!-- End of Movie List-->       
+    </main>
+    <!-- End of App Wrapper -->
+
+    <!-- JS Import -->
+	<script src="main.js"></script>
+	<!-- End of JS Import --> 
+</body>
+</html>
